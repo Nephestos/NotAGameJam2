@@ -14,7 +14,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if entered== true:
-		 get_tree().change_scene("res://Game.tscn")
+		 get_tree().change_scene("res://TopviewMap.tscn")
 
 
 func _on_Area2D_body_entered(body: PhysicsBody2D):

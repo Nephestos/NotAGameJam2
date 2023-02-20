@@ -11,12 +11,18 @@ config_version=4
 [application]
 
 config/name="Not A Game Jam 2"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://SideviewMap.tscn"
 config/icon="res://icon.png"
 
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[importer_defaults]
+
+texture={
+"flags/filter": false
+}
 
 [input]
 
