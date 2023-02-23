@@ -28,3 +28,8 @@ func _process(delta):
 	get_input()
 	velocity = move_and_slide(velocity)
 
+func set_active(active):
+	set_physics_process(active)
+	set_process(active)
+	set_process_input(active)
+	

@@ -1,0 +1,8 @@
+[
+    {"name" : "NPC", "text": "Halte ! Qui vient par ici ?"},
+    {"name" : "Player", "text": "Un preux chevalier qui souhaite passer."},
+    {"name" : "NPC", "text": "Haha ! Un preux chevalier ? Laissez-moi rire"},
+    {"name" : "Player", "text": "Mais c'est vr..."},
+    {"name" : "NPC", "text": "Foutez le camp !"},
+    {"name" : "Player", "text": "..."}
+]
