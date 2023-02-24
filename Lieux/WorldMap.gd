@@ -12,7 +12,7 @@ func _ready():
 	pass # Replace with function body.
 
 func _on_Cave_body_entered(body):
-	get_tree().change_scene("res://SideviewMap.tscn")
+	get_tree().change_scene("res://Lieux/Cave.tscn")
 
 
 func _on_Gift_got_gift(gift_name):
