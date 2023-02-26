@@ -10,21 +10,22 @@
 
 [node name="BackgroundCave" type="Sprite" parent="."]
 light_mask = 4
-position = Vector2( 745, 266 )
+position = Vector2( 741, 339 )
 scale = Vector2( 1.235, 1 )
 texture = ExtResource( 2 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 185, 474 )
+position = Vector2( 95, 576 )
+node_path = NodePath("../BackgroundCave")
 
 [node name="Guard" parent="." instance=ExtResource( 4 )]
-position = Vector2( 734, 524 )
+position = Vector2( 772, 618 )
 
 [node name="Dialoguebox" parent="Guard" instance=ExtResource( 5 )]
 dialogue_file = "res://dialogue/jsons/guard.json"
 
 [node name="Portail" parent="." instance=ExtResource( 1 )]
-position = Vector2( 15, 701 )
+position = Vector2( -19, 773 )
 collision_layer = 1
 collision_mask = 1
 next_scene_path = "res://Lieux/WorldMap.tscn"

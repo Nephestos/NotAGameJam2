@@ -1,14 +1,14 @@
 extends KinematicBody2D
 
+export(NodePath) var node_path
+onready var sprite = get_node(node_path) as Sprite
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	if sprite:	
+		$Camera2D.limit_left = 0
+		$Camera2D.limit_right = sprite.texture.get_width() * sprite.scale.x
+		$Camera2D.limit_bottom = sprite.texture.get_height() * sprite.scale.y
+		$Camera2D.limit_top = 0
 
 export (int) var speed = 200
 
