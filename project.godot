@@ -16,7 +16,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-global="*res://Lieux/Portail.gd"
+PlayerStats="*res://player/Player_Stats.gd"
 
 [global]
 

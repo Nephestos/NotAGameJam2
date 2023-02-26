@@ -23,3 +23,9 @@ position = Vector2( -4, 939 )
 collision_layer = 257
 collision_mask = 3
 next_scene_path = "res://Lieux/WorldMap.tscn"
+
+[node name="Portail2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2157, 941 )
+collision_layer = 257
+collision_mask = 3
+next_scene_path = "res://Lieux/WorldMap.tscn"

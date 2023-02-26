@@ -4,6 +4,9 @@ export (int) var speed = 200
 
 var velocity = Vector2()
 
+func _ready():
+	set_position(PlayerStats.return_map_position)
+
 func get_input():
 	var map_size = calculate_bounds().size
 	var pos = get_position()
@@ -12,15 +15,19 @@ func get_input():
 	if Input.is_action_pressed("right"):
 		if pos.x < map_size.x-16 :
 			velocity.x += 1
+			PlayerStats.direction = "right"
 	if Input.is_action_pressed("left"):
 		if pos.x > 16 :
 			velocity.x -= 1
+			PlayerStats.direction = "left"
 	if Input.is_action_pressed("down"):
 		if pos.y < map_size.y-16:
 			velocity.y += 1
+			PlayerStats.direction = "down"
 	if Input.is_action_pressed("up"):
 		if pos.y > 16 :
 			velocity.y -= 1
+			PlayerStats.direction = "up"
 	velocity = velocity.normalized() * speed
 
 func _physics_process(delta):
